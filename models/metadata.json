@@ -1,0 +1,24 @@
+{
+  "best_classifier": "XGBoostClassifier",
+  "best_regressor": "XGBoostRegressor",
+  "class_names": [
+    "Eligible",
+    "High_Risk",
+    "Not_Eligible"
+  ],
+  "clf_val_metrics": {
+    "accuracy": 0.9511,
+    "precision_macro": 0.8202,
+    "recall_macro": 0.9456,
+    "f1_macro": 0.8563,
+    "roc_auc_ovr": 0.9946,
+    "train_time_sec": 21.5381
+  },
+  "reg_val_metrics": {
+    "rmse": 632.6567,
+    "mae": 216.9909,
+    "r2": 0.9933,
+    "mape": 0.0595,
+    "train_time_sec": 9.3668
+  }
+}

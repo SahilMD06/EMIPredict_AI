@@ -1,0 +1,1 @@
+[{"model":"LinearRegression","rmse":3952.4971,"mae":2834.7284,"r2":0.7382,"mape":1.8345,"train_time_sec":2.3466},{"model":"RandomForestRegressor","rmse":847.7754,"mae":274.633,"r2":0.988,"mape":0.0534,"train_time_sec":121.3967},{"model":"XGBoostRegressor","rmse":632.6567,"mae":216.9909,"r2":0.9933,"mape":0.0595,"train_time_sec":9.3668}]

@@ -1,0 +1,6 @@
+{
+  "best_classifier": "XGBoostClassifier",
+  "best_regressor": "XGBoostRegressor",
+  "clf": {"accuracy": 0.9517, "precision_macro": 0.8214, "recall_macro": 0.9471, "f1_macro": 0.8575, "roc_auc_ovr": 0.9948},
+  "reg": {"rmse": 600.01, "mae": 216.85, "r2": 0.994, "mape": 0.0588}
+}
