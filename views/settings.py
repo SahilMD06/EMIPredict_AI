@@ -47,6 +47,13 @@ def render() -> None:
             if st.button("Clear cached data"):
                 st.cache_data.clear()
                 st.success("Cached dataset and metric files cleared.")
+            if st.button("Reload models"):
+                # Clears @st.cache_resource so the pipelines are re-read from disk.
+                # Useful after replacing artifacts without restarting the process.
+                st.cache_resource.clear()
+                st.cache_data.clear()
+                st.success("Model cache cleared — reloading from disk.")
+                st.rerun()
 
     with tab_model:
         c1, c2 = st.columns(2, gap="medium")
