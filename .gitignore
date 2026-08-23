@@ -1,9 +1,16 @@
-mlartifacts/
+# MLflow run artifacts (large; the tracking DB below is enough for the app's
+# Model Monitoring page, which reads experiments, metrics and the registry).
 mlruns/
-mlflow.db
+mlartifacts/
+
+# Local application state
 app_data.db
+
+# Python
 __pycache__/
 *.pyc
+
+# Notebook execution scratch
 .ns.dill
 .progress.json
 .ipynb_checkpoints/

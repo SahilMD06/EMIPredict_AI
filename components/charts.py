@@ -121,9 +121,9 @@ def scenario_mix(df: pd.DataFrame) -> go.Figure:
         fig.add_bar(name=cls.replace("_", " "), y=ct.index, x=ct[cls], orientation="h",
                     marker_color=CLASS_COLORS[cls],
                     hovertemplate="%{y}<br>%{x:.1f}%<extra></extra>")
-    fig.update_layout(barmode="stack")
-    fig.update_xaxes(title="Share of applications (%)", range=[0, 100])
-    fig.update_yaxes(title=None)
+    fig.update_layout(barmode="stack", legend_title_text="")
+    fig.update_xaxes(title_text="Share of applications (%)", range=[0, 100])
+    fig.update_yaxes(title_text="")
     return style(fig, height=330)
 
 
