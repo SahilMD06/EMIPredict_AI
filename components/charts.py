@@ -25,7 +25,11 @@ def style(fig: go.Figure, height: int = 340, legend: bool = True) -> go.Figure:
                     font=dict(size=11)),
         hoverlabel=dict(bgcolor="#18233A", bordercolor="#22304C",
                         font=dict(color="#E6EAF2", family=FONT, size=12)),
-        title=dict(font=dict(size=13, color="#E6EAF2")),
+        # Always give the title an explicit string. Leaving text as None creates a
+        # title object with no text, which the Streamlit chart wrapper renders as
+        # the literal string "undefined".
+        title=dict(text=fig.layout.title.text or "",
+                   font=dict(size=13, color="#E6EAF2")),
     )
     fig.update_xaxes(gridcolor=GRID, zerolinecolor=GRID, linecolor=GRID)
     fig.update_yaxes(gridcolor=GRID, zerolinecolor=GRID, linecolor=GRID)
